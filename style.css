@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    color: tomato;
+    text-align: center;
+}
+
+ul.list-items-con {
+    list-style: none;
+}
+
+li.list-items {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+li.list-items button{
+    background-color: tomato;
+    padding: 10px;
+    border: none;
+    color: #fff;
+}
+.wrapper {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 150px;
+}
+
+.add-task {
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    color: #989393;
+}
+
+.inputs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inputs input {
+    font-size: 16px;
+    border: 2px solid tomato;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.inputs input[type='text'] {
+    flex: 1; 
+    width: 100%;
+}
+.inputs input[type='submit'] {
+    background-color: tomato;
+    color: white;
+}
+
+.todo-list {
+    margin-top: 20px;
+}
+
+/* button error */
+.error{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    font-size: 27px;
+    color: #6e6e6e;
+    transform: translate(-50%,-50%);
+}
+
+.error button{
+    background-color: rgb(24, 199, 24);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+button,
+.inputs input[type='submit']{
+    cursor: pointer;
+}
+@media only screen and (max-width:350px) {
+    .inputs {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
